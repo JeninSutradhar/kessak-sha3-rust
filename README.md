@@ -19,19 +19,23 @@ To use this crate in your Rust project, add the following line to your `Cargo.to
 
 ```toml
 [dependencies]
-sha3 = "0.1.0"
+sha3-rust = "0.1.1"
 ```
 
 Then, in your Rust code, you can import and use the SHA-3 hash functions as follows:
 
 ```rust
-use sha3_rust::{sha3_224, sha3_256, sha3_384, sha3_512};
+use sha3_rust::*;
 
 fn main() {
-    let input_str = "Hello, world!";
-    let hash_256 = sha3_256(input_str.as_bytes());
-    println!("SHA3-256 hash of '{}': {:?}", input_str, hash_256);
+    let input = "Hello, world!";
+    let hash = sha3_256(input.as_bytes());
+    println!("SHA3-256 hash of '{}': {:?}", input, hash);
 }
+```
+- output:
+```bash
+SHA3-256 hash of 'Hello, world!': [172, 79, 176, 238 ... 139, 93, 150]
 ```
 ## More use cases
 - **Example 1:** Hashing a simple string
@@ -40,7 +44,7 @@ fn main() {
     let input_str = "Hello, world!";
     // Compute the SHA3-256 hash of the string.
     let hash_256 = sha3_256(input_str.as_bytes());
-    // Print the hash.
+
     println!("SHA3-256 hash of '{}': {:?}", input_str, hash_256);
 ```
 
@@ -52,7 +56,7 @@ fn main() {
     let file_contents = std::fs::read(file_path).expect("Failed to read file");
     // Compute the SHA3-512 hash of the file.
     let hash_512 = sha3_512(&file_contents);
-    // Print the hash.
+
     println!("SHA3-512 hash of file '{}': {:?}", file_path, hash_512);
 ```
 
@@ -74,7 +78,7 @@ fn main() {
     let user_password = "s3cr3t_p@ssw0rd";
     // Compute the SHA3-384 hash of the password.
     let hash_384 = sha3_384(user_password.as_bytes());
-    // Print the hash.
+
     println!("SHA3-384 hash of user password: {:?}", hash_384);
 ```
 
@@ -84,7 +88,7 @@ fn main() {
     let sensitive_data = b"0123456789abcdef";
     // Compute the SHA3-256 hash of the sensitive data.
     let hash_256_secure = sha3_256(sensitive_data);
-    // Print the hash.
+
     println!("Secure SHA3-256 hash of sensitive data: {:?}", hash_256_secure);
 ```
 

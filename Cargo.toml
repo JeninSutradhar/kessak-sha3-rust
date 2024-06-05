@@ -1,6 +1,6 @@
 [package]
 name = "sha3-rust"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Jenin Sutradhar <jensutradhar@gmail.com>"]
 description = "This crate provides an implementation of the Keccak (SHA-3) cryptographic hash function family"
@@ -14,3 +14,6 @@ keywords = ["keccak", "hash", "sha3", "sha-3", "cryptography"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+
+
