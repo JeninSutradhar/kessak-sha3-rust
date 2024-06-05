@@ -1,0 +1,16 @@
+[package]
+name = "sha3-rust"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jenin Sutradhar <jensutradhar@gmail.com>"]
+description = "This crate provides an implementation of the Keccak (SHA-3) cryptographic hash function family"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/jensutradhar/keccak-sha3-rust"
+homepage = "https://github.com/jensutradhar/keccak-sha3-rust"
+categories = ["cryptography", "no-std", "no-std::no-alloc"]
+keywords = ["keccak", "hash", "sha3", "sha-3", "cryptography"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
