@@ -121,6 +121,5 @@ Contributions are welcome! If you encounter any bugs or have suggestions for imp
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
 
-Feel free to further customize and expand upon this README.md as needed for your project!
+- crates: https://crates.io/crates/sha3-rust
