@@ -11,7 +11,6 @@ The Sha3 crate is a Rust library that implements the Keccak (SHA-3) cryptographi
 - **Implementation of SHA-3 Hash Functions**: The crate offers hash functions with different output lengths, making it suitable for various cryptographic applications.
 - **Flexible Input Handling**: The hash functions accept byte slices as input, allowing you to hash strings, files, or any other binary data.
 - **Customizable Padding and Sponge Functions**: The crate includes utility functions for padding input data and implementing sponge constructions, providing flexibility in cryptographic protocols.
-- **Thoroughly Documented Codebase**: Each function and macro in the codebase is thoroughly documented, making it easy to understand and modify for specific use cases.
 
 ## Usage
 
